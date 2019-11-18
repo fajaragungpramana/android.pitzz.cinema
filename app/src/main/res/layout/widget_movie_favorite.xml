@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/BodyPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favorite_movies"
+            android:textColor="@android:color/white" />
+
+        <StackView
+            android:id="@+id/sv_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:loopViews="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_view"
+        style="@style/HeadingPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:text="@string/unknown"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</FrameLayout>

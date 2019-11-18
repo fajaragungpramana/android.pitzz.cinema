@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pitzz</string>
+    <string name="added_to_favorites">Ditambahkan ke favorit!</string>
+    <string name="choose_language">Pilih Bahasa</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+    <string name="daily_reminder_message">Pengingat untuk kembali ke aplikasi.</string>
+    <string name="date">Tanggal</string>
+    <string name="english">English</string>
+    <string name="favorite_movies">Film Favorit</string>
+    <string name="favorites">Favorit</string>
+    <string name="genres">Genre</string>
+    <string name="hours">Jam</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="looking_a_movie">Mencari film?</string>
+    <string name="looking_a_tv_shows">Mencari acara tv?</string>
+    <string name="minutes">Menit</string>
+    <string name="movies">Film</string>
+    <string name="no_favorites_message">Film favorit anda masih kosong, untuk menambahkan film favorite klik tombol favorit di halaman detail!</string>
+    <string name="no_movie_message">Tidak ada film yang di temukan di server!</string>
+    <string name="now_playing">Mainkan Sekarang</string>
+    <string name="oops">Oops!</string>
+    <string name="overview">Overview</string>
+    <string name="productions">Produksi</string>
+    <string name="release_reminder">Pengingat Rilis</string>
+    <string name="release_reminder_message">Pengingat menunjukkan film yang dirilis hari ini.</string>
+    <string name="remove_from_favorites">Dihapus dari favorit!</string>
+    <string name="runtime">Durasi</string>
+    <string name="settings">Pengaturan</string>
+    <string name="televisions">Televisi</string>
+    <string name="title">Judul</string>
+    <string name="unknown">Tidak di ketahui</string>
+    <string name="vote_average">9.0</string>
+    <string name="votes">%s Suara</string>
+    <string name="daily_reminder_notification_message">Hai Selamat Pagi, waktunya untuk melihat film terbaru.</string>
+</resources>

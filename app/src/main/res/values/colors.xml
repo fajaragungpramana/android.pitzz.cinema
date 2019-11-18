@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Opacity -->
+    <color name="colorOpacityBackdrop">#80222222</color>
+
+    <!-- Other -->
+    <color name="colorAccent">#FF416C</color>
+    <color name="colorShimmer">#9B9B9B</color>
+
+    <!-- Primary -->
+    <color name="colorPrimary">#FF416C</color>
+    <color name="colorPrimaryDark">#9E9E9E</color>
+    <color name="colorPrimaryText">#222222</color>
+    <color name="colorPrimaryDivide">#EBEBEB</color>
+
+    <!-- Secondary -->
+    <color name="colorSecondaryText">#9B9B9B</color>
+
+</resources>

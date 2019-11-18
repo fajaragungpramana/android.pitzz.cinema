@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="movie" type="com.implizstudio.android.app.pitzz.data.model.BaseEntity.Movie" />
+        <variable name="television" type="com.implizstudio.android.app.pitzz.data.model.BaseEntity.Television" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_poster"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="@dimen/margin_primary"
+            android:layout_marginTop="@dimen/margin_primary"
+            android:layout_marginEnd="@dimen/margin_primary"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="@dimen/corner_card"
+            app:cardElevation="@dimen/elevation_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:displayPoster="@{movie.poster ?? television.poster}"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/ic_no_image" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/BodyPrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="@{movie.title ?? television.name ?? @string/unknown}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cv_poster"
+            app:layout_constraintStart_toStartOf="@+id/cv_poster"
+            app:layout_constraintTop_toBottomOf="@+id/cv_poster"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="@string/title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_no_movie"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        style="@style/HeadingPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_primary"
+        android:text="@string/oops" />
+
+    <TextView
+        style="@style/BodyPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_secondary"
+        android:layout_marginEnd="@dimen/margin_secondary"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/no_favorites_message"
+        android:textColor="@color/colorSecondaryText" />
+
+</LinearLayout>

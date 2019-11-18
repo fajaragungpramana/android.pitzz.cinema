@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bnv_main"
+    app:startDestination="@id/navigation_movies">
+
+    <fragment
+        android:id="@+id/navigation_movies"
+        android:name="com.implizstudio.android.app.pitzz.ui.bnv.movie.MovieFragment"
+        tools:layout="@layout/fragment_movie" >
+        <action
+            android:id="@+id/action_navigation_movies_to_navigation_televisions"
+            app:destination="@id/navigation_televisions" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_televisions"
+        android:name="com.implizstudio.android.app.pitzz.ui.bnv.television.TelevisionFragment"
+        tools:layout="@layout/fragment_movie" >
+        <action
+            android:id="@+id/action_navigation_televisions_to_navigation_favorites"
+            app:destination="@id/navigation_favorites" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.implizstudio.android.app.pitzz.ui.bnv.favorite.FavoriteFragment"
+        tools:layout="@layout/fragment_movie" />
+
+</navigation>
